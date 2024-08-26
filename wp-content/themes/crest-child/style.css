@@ -490,6 +490,7 @@ a.skip-to-content:active {
 	font-size: 1.2em;
 	z-index: 9999;
 }
+
 /*================================================================================================================
  TranslatePress Menu
  ================================================================================================================*/
@@ -500,4 +501,28 @@ a.skip-to-content:active {
 
 .trp-language-switcher-container.trp-floater-ls-names.trp-top-right.trp-color-dark {
 	min-width: 25px;
+}
+
+/*================================================================================================================
+ Sidebar Badges
+ ================================================================================================================*/
+.badges {
+	display: grid !important;
+	/*
+	temp fix important's here. 
+	need to adjust how this style works "#mainSidebar > * " in the parent theme.
+	*/
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 10px;
+	margin-top: 1em !important;
+}
+
+.badges img:nth-child(1),
+.badges img:nth-child(2) {
+	grid-column: span 1;
+}
+
+.badges img:nth-child(3) {
+	grid-column: span 2;
 }

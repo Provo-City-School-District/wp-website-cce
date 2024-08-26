@@ -1,7 +1,9 @@
 <aside id="mainSidebar">
-	<img src="https://canyoncrest.provo.edu/wp-content/uploads/2023/11/best-elementary-school-2024.png" class="center" alt="Best Elementary Schools by US News Badge" />
-
-
+	<section class="badges">
+		<img src="https://canyoncrest.provo.edu/wp-content/uploads/2023/11/best-elementary-school-2024.png" class="center" alt="Best Elementary Schools by US News Badge" />
+		<img src="https://canyoncrest.provo.edu/wp-content/uploads/2024/08/20240811_2226-utah-stem-school-designation-logo-07092024.png" class="center" alt="Utah STEM school designation Badge" />
+		<img src="https://canyoncrest.provo.edu/wp-content/uploads/2024/08/133764-2024-Promising-Practices-School-Badge.png" class="center" alt="Promising Practices School Badge" />
+	</section>
 	<section class="calendar-agenda">
 		<h1>Today’s Events</h1>
 		<?php echo do_shortcode('[calendar id="172"]'); ?>
