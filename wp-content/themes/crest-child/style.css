@@ -21,52 +21,43 @@ Variables
 :root {
 	--even-tile-bg-color: #e1e9f4;
 	--odd-tile-bg-color: #cddbee;
-	--primary-color: #013c6c;
-	--secondary-color: #56a31d;
+	--primary-color: #043C6C;
+	--secondary-color: #eddb9d;
 	--accent-color: #ffffff;
+	--text-color: #02224f;
+	--link-color: #043c6c;
+	--link-hover-color: #1C4002;
 }
-
 
 /*================================================================================================================
 Global Changes needed
 ================================================================================================================*/
-
 .wp-playlist .mejs-video video,
 .wp-playlist .mejs-video {
 	max-width: 1000px;
 	max-height: 500px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*================================================================================================================
 Theme specific coloring
 ================================================================================================================*/
 #mainSidebar,
 #mainFooter {
-	background-color: #013c6c;
+	background-color: var(--primary-color);
 }
 
 #contentArea {
-	background-color: #56a31d;
+	background-color: var(--secondary-color);
 }
 
 a {
 	text-decoration: none;
-	color: #45579c;
+	color: var(--link-color);
 }
 
 a:hover {
-	color: #fc7e02;
+	color: var(--link-hover-color);
+	text-decoration: underline;
 }
 
 #mainHeader #cludo-search-form .search-submit {
@@ -83,7 +74,7 @@ body {
 }
 
 /*================================================================================================================
-Overall Structeral  Styles
+Overall Structural  Styles
 ================================================================================================================*/
 @media (max-height: 720px) {
 	body {
@@ -136,7 +127,6 @@ ul li~h3 {
 header styles
 ================================================================================================================*/
 #mainHeader {
-	background-image: url('assets/images/header-texture.png');
 	background-repeat: no-repeat;
 	background-color: #013c6c;
 	background-size: cover;
@@ -152,7 +142,7 @@ header styles
 }
 
 #mainHeader #siteLogo {
-	width: 45px;
+	width: 65px;
 	margin-top: -16px;
 	margin-left: 0px;
 }
@@ -322,11 +312,7 @@ list icon color adjustments
 /*================================================================================================================
 Content Area
 ================================================================================================================*/
-/*@media (max-width: 1166px) {
-	#mainSidebar, #contentArea {
-		top: 192px;
-	}
-}*/
+
 @media (max-width: 885px) {
 
 	#mainSidebar,
@@ -395,7 +381,6 @@ Calendar plugin styling
 	display: none;
 }
 
-/*#mainSidebar .simcal-default-calendar-list .simcal-event-details .simcal-event-start-date {display: none;} */
 .single-page .simcal-day-label {
 	background-color: #02224f !important;
 }
@@ -433,22 +418,6 @@ tile coloring
 .tiles .tile:nth-child(odd) {
 	background-color: #cddbee;
 }
-
-
-/*@media (max-height: 680px) {
-	#mainHeader h1 {
-		top: 45px;
-	}
-	#mainHeader aside {
-		top: 60px;
-	}
-	#mainMenu {
-		margin-top: -25px;
-	}
-	.mega-menu {
-		z-index: 1000;
-	}
-}*/
 
 /*================================================================================================================
 Teacher access
