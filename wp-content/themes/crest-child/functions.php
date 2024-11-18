@@ -24,13 +24,13 @@ function pcsd_add_favicon()
 add_action('wp_head', 'pcsd_add_favicon');
 //add the favicon to the login page
 add_action('login_head', 'pcsd_add_favicon');
+
 /*==========================================================================================
 Custom Excerpt
 ============================================================================================*/
 function get_excerpt()
 {
 	$excerpt = get_the_content();
-	//$excerpt = preg_replace(" ([*~])",'',$excerpt);
 	$excerpt = strip_shortcodes($excerpt);
 	$excerpt = strip_tags($excerpt);
 	$excerpt = substr($excerpt, 0, 200);
@@ -78,10 +78,7 @@ function sidebar_func()
 	//global $post;
 	if (in_array(117, get_post_ancestors($post))) {
 		get_sidebar('about');
-	} //elseif(in_array( 117, get_post_ancestors($post))) {
-	//get_sidebar( 'counseling' );
-	//}
-	elseif (in_array(623, get_post_ancestors($post))) {
+	} elseif (in_array(623, get_post_ancestors($post))) {
 		get_sidebar('title-i');
 	} elseif (in_array(122, get_post_ancestors($post))) {
 		get_sidebar('policies-forms');
@@ -125,12 +122,3 @@ function facultyMenu_func()
 	return $faculty_Menu->post_content;
 }
 add_shortcode('facultyMenu', 'facultyMenu_func');
-
-//[titleiMenu]
-// function titleiMenu_func()
-// {
-// 	$titleI_menu = get_post(623);
-// 	return $titleI_menu->post_content;
-// 	// get_template_part('template-parts/mega-menu-dropdowns', 'titlei');
-// }
-// add_shortcode('titleiMenu', 'titleiMenu_func');
