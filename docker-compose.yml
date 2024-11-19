@@ -12,6 +12,11 @@ services:
       MARIADB_ROOT_PASSWORD: $MARIADB_ROOT_PASSWORD
       MARIADB_DATABASE: wordpress
     container_name: cce_db
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        tag: "canyoncrest-db"
   #Web
   cce_wp:
     depends_on:
@@ -41,6 +46,11 @@ services:
     container_name: cce_wp
     volumes:
       - ./wp-content:/var/www/html/wp-content
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        tag: "canyoncrest-wp"
   #PhpMyAdmin
   cce_myadmin:
     image: phpmyadmin:latest
@@ -53,6 +63,11 @@ services:
       UPLOAD_LIMIT: 100M
     depends_on:
       - cce_db
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        tag: "canyoncrest-myadmin"
 volumes:
   db_data:
   wp-content:
