@@ -32,7 +32,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://canyoncrest.provo.edu/wp-content/uploads/2024/07/canyon-crest-ab-calendar-07102024.pdf">
+				<a href="https://canyoncrest.provo.edu/wp-content/uploads/2024/11/11132024-canyon-crest-a-b-calendar-2024-2025.pdf">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/all-events-calendar.svg" alt="" />
 					<span>A/B Calendar</span>
 				</a>
