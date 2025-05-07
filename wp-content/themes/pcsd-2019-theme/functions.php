@@ -567,6 +567,11 @@ function schedule_end_func()
 }
 add_shortcode('schedule_end_list', 'schedule_end_func');
 // [get_teacher_access_menu]
+
+/*
+
+*** Teacher access menu removed 04-08-2025 -- No longer needed as teachers will not be using the website to host web pages ***
+
 function get_teacher_access_menu()
 {
     echo '<ul class="imagelist">';
@@ -585,7 +590,11 @@ function get_teacher_access_menu()
     curl_close($get_teacher_access_menu);
     echo '</ul>';
 }
+
 add_shortcode('get_teacher_access_menu', 'get_teacher_access_menu');
+
+*/
+
 //====================================== Child Nutrition Menu Pulls ======================================
 //[cn-menu]
 function cn_global_menu()

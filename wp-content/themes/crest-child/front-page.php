@@ -51,9 +51,8 @@
 					<header class="postmeta">
 						<a href="<?php the_permalink(); ?>">
 							<div class="featured-image">
-
 								<?php
-								if (get_field('featured_image', $post_id)) {
+								if (get_field('featured_image', get_the_ID())) {
 								?>
 									<img src="<?php echo get_field('featured_image'); ?>" alt="" class="" />
 								<?php

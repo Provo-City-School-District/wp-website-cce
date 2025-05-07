@@ -1484,6 +1484,11 @@ Sidebar
 Footer
 ================================================================================================================
 */
+
+/*
+
+*** Teacher access menu removed 04-08-2025 -- No longer needed as teachers will not be using the website to host web pages ***
+
 #teacherAccess {
   position: absolute;
   z-index: 1;
@@ -1533,6 +1538,8 @@ Footer
   margin-top: 5px;
   margin-left: 5px;
 }
+
+*/
 
 /*
 ================================================================================================================

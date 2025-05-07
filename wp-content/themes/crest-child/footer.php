@@ -1,8 +1,10 @@
 <footer id="mainFooter">
+	<!--
 	<section id="teacherAccess">
 		<h1 class="teacherActivate"><a href="<?php echo get_home_url(); ?>/teacher-access/">Teacher Access</a></h1>
 		<?= do_shortcode('[get_teacher_access_menu]'); ?>
 	</section>
+	-->
 	<?php
 	// create a new cURL resource
 	$globalfooter = curl_init();

@@ -3,6 +3,10 @@
 Teacher Access menu
 =============================================================================================================
 */
+/*
+
+*** Teacher access menu removed 04-08-2025 -- No longer needed as teachers will not be using the website to host web pages ***
+
 jQuery(".teacherActivate").click(function () {
   return false;
 });
@@ -15,3 +19,5 @@ jQuery(".teacherActivate").click(function () {
     jQuery("#teacherAccess ul").css("display", "none");
   }
 });
+
+*/

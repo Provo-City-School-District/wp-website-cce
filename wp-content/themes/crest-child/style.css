@@ -17,7 +17,7 @@ Variables
 	--theme-black: #000;
 	--theme-gray: #ccc;
 	--primary-color: #043C6C;
-	--secondary-color: #eddb9d;
+	--secondary-color: #aede8c;
 	--accent-color: #56a31d;
 	--link-color: #043c6c;
 	--link-hover-color: #1C4002;
@@ -47,13 +47,13 @@ Theme specific coloring
 }
 
 a {
-	text-decoration: none;
+	/* text-decoration: none; */
 	color: var(--link-color);
 }
 
 a:hover {
 	color: var(--link-hover-color);
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 
 #mainHeader #cludo-search-form .search-submit {
@@ -420,9 +420,11 @@ tile coloring
 /*================================================================================================================
 Teacher access
 ================================================================================================================*/
+/*
 #teacherAccess {
 	background-color: var(--primary-color);
 }
+*/
 
 /*================================================================================================================
  TranslatePress Menu
